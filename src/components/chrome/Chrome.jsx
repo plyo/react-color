@@ -24,27 +24,26 @@ class Chrome extends ReactCSS.Component {
           borderRadius: '2px',
           boxShadow: '0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3)',
           boxSizing: 'initial',
-          width: '225px',
-          fontFamily: 'Menlo',
+          width: '215px'
         },
         saturation: {
           width: '100%',
-          paddingBottom: '55%',
+          paddingBottom: '42%',
           position: 'relative',
           borderRadius: '2px 2px 0 0',
-          overflow: 'hidden',
+          overflow: 'hidden'
         },
         Saturation: {
-          radius: '2px 2px 0 0',
+          radius: '2px 2px 0 0'
         },
         body: {
-          padding: '16px 16px 12px',
+          padding: '16px 16px 12px'
         },
         controls: {
-          display: 'flex',
+          display: 'flex'
         },
         color: {
-          width: '32px',
+          width: '32px'
         },
         swatch: {
           marginTop: '6px',
@@ -52,34 +51,34 @@ class Chrome extends ReactCSS.Component {
           height: '16px',
           borderRadius: '8px',
           position: 'relative',
-          overflow: 'hidden',
+          overflow: 'hidden'
         },
         active: {
           Absolute: '0 0 0 0',
           zIndex: 2,
           borderRadius: '8px',
           boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.1)',
-          background: 'rgba(' + this.props.rgb.r + ', ' + this.props.rgb.g + ', ' + this.props.rgb.b + ', ' + this.props.rgb.a + ')',
+          background: 'rgba(' + this.props.rgb.r + ', ' + this.props.rgb.g + ', ' + this.props.rgb.b + ', ' + this.props.rgb.a + ')'
         },
         toggles: {
-          flex: '1',
+          flex: '1'
         },
         hue: {
           height: '10px',
           position: 'relative',
-          marginBottom: '8px',
+          marginTop: '8px'
         },
         Hue: {
-          radius: '2px',
+          radius: '2px'
         },
         alpha: {
           height: '10px',
-          position: 'relative',
+          position: 'relative'
         },
         Alpha: {
-          radius: '2px',
-        },
-      },
+          radius: '2px'
+        }
+      }
     };
   }
 
@@ -104,9 +103,6 @@ class Chrome extends ReactCSS.Component {
             <div is="toggles">
               <div is="hue">
                 <Hue is="Hue" {...this.props} pointer={ ChromePointer } onChange={ this.handleChange } />
-              </div>
-              <div is="alpha">
-                <Alpha is="Alpha" {...this.props} pointer={ ChromePointer } onChange={ this.handleChange } />
               </div>
             </div>
           </div>
